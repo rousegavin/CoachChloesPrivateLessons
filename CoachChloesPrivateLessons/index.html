@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="bouncingball.css">
+    
+    <title>Coach Chloe's Private Lessons</title>
+  </head>
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
+      <div>
+        <header>
+          <h1 class="text-uppercase">Welcome to <strong><em>Coach Chloe's Private Lessons!</em></strong></h1>
+        </header>
+        <section>
+          <h3>Class hasn't started yet, it's not too late to get a spot!</h3>
+          <h3>Click the <strong>volleyball</strong> to <strong>learn more</strong>!</h3>
+        </section>
+        <br>
+        <div id="box">
+          <div id="ball" onclick="bounce(); shadow()">
+            <img class="ballbutton" src="images/vbButton.png" height="100px" width="100px">
+          </div>
+          <script>
+            function bounce() {
+              var element = document.getElementById("ball");
+              element.classList.add("ball");
+            }
+          </script>
+          <div id="shadow"></div>
+          <script>
+            function shadow() {
+              var element = document.getElementById("shadow");
+              element.classList.add("shadow");
+            }
+          </script>
+        </div> 
+      </div>
+    </div>
+    <div>
+      <section>
+        <a href="https://unsplash.com/@timovaknar?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">Photo by Timo Wagner on Unsplash</a>
+      </section>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
