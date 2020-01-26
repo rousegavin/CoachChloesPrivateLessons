@@ -8,6 +8,7 @@ body, html {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
+    text-shadow: 2px 2px black;
 }
 
 .row {
@@ -24,10 +25,17 @@ body, html {
 }
 
 h1 {
+    font-size: 5rem;
+    color: lightgoldenrodyellow;
+}
+
+h2 {
+    font-size: 4rem;
     color: lightgoldenrodyellow;
 }
 
 h3 {
+    font-size: 3rem;
     color: lightgoldenrodyellow;
 }
 
