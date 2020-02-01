@@ -8,9 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="bouncingball.css">
+<<<<<<< HEAD:CoachChloesPrivateLessons/index.html
         
+=======
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+>>>>>>> d3f6333fd0772670258dd337bff9c37f4e1ed00e:index.html
     <title>Coach Chloe's Private Lessons</title>
   </head>
   <body>
@@ -25,12 +30,13 @@
       <br>
       <a href="#section2">
         <div id="box">
-          <div id="ball" onclick="bounce(); shadow()">
+          <div id="ball" class="animated rubberBand slow delay-5s" onclick="bounce(); shadow()">
             <img class="ballbutton" src="images/vbButton.png" height="100px" width="100px">
           </div>
           <script>
             function bounce() {
               var element = document.getElementById("ball");
+              element.classList.remove("delay-5s")
               element.classList.add("ball");
             }
           </script>
